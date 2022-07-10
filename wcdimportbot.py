@@ -9,6 +9,11 @@ except ModuleNotFoundError:
     )
 from src import WcdImportBot
 
-logging.basicConfig(level=config.loglevel)
-wcdimportbot = WcdImportBot()
-wcdimportbot.run()
+
+def main() -> None:
+    logging.basicConfig(level=config.loglevel)
+    WcdImportBot().run()
+
+
+if __name__ == "__main__":
+    main()
