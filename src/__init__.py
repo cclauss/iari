@@ -21,6 +21,8 @@ from src.models.wikibase.wikicitations_wikibase import WikiCitationsWikibase
 from src.models.wikimedia.enums import WikimediaSite
 from src.wcd_base_model import WcdBaseModel
 
+__version__ = "2.0.0"
+
 logging.basicConfig(level=config.loglevel)
 logger = logging.getLogger(__name__)
 
